@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+    max-width: 100%;
+    width: 100%;
+}
+.heading{
+    @apply text-black font-bold text-4xl md:text-5xl xl:text-6xl; 
+}
+p{
+    line-height: 1.8;
+    @apply text-sm;
+}
+.showcase{
+    background: url("./assets/img1.jpg") no-repeat center/cover;
+    height: calc(100vh - 0.1px);
+    @apply bg-fixed
+}
+.showcase .overlay{
+    background-color: rgba(0,0,0,0.2);
+    height: calc(100vh - 0.1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.articles{
+    @apply bg-stone-900 p-5 rounded-lg shadow shadow-zinc-800 text-white text-sm
+}
+.max-width{
+    @apply max-w-6xl mx-auto
+}
